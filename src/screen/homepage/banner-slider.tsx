@@ -73,7 +73,7 @@ export function BannerSlider() {
   }
 
   return (
-    <section className="relative h-[70vh] overflow-hidden">
+    <section className="relative h-[80vh] overflow-hidden">
       {/* Slides */}
       <div className="relative h-full">
         {banners.map((banner, index) => (
@@ -94,7 +94,7 @@ export function BannerSlider() {
       </div>
 
       {/* Navigation Arrows */}
-      <Button
+      {/* <Button
         variant="ghost"
         size="icon"
         className="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:bg-white/20 z-10"
@@ -109,7 +109,7 @@ export function BannerSlider() {
         onClick={nextSlide}
       >
         <ChevronRight className="h-6 w-6" />
-      </Button>
+      </Button> */}
 
       {/* Dots Indicator */}
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-2 z-10">
@@ -125,14 +125,14 @@ export function BannerSlider() {
       </div>
 
       {/* Progress Bar */}
-      <div className="absolute bottom-0 left-0 w-full h-1 bg-white/20">
+      {/* <div className="absolute bottom-0 left-0 w-full h-1 bg-white/20">
         <div
           className="h-full bg-white transition-all duration-300 ease-linear"
           style={{
             width: `${((currentSlide + 1) / banners.length) * 100}%`,
           }}
         />
-      </div>
+      </div> */}
     </section>
   )
 }
