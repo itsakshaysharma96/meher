@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Logo from "@/public/logo-new.png"
+import Link from "next/link"
 
 export function Header() {
   return (
@@ -7,28 +8,24 @@ export function Header() {
       <div className="max-w-7xl mx-auto">
 
 
-        <nav className="hidden md:flex items-center justify-between space-x-8">
-          <a href="#about" className="text-lg font-medium hover:text-primary transition-colors">
+        <nav className=" md:flex items-center justify-center space-x-8 gap-20">
+          <a href="#about" className="hidden md:block text-[16px] font-medium text-black hover:text-primary transition-colors">
             ABOUT
           </a>
-          <a href="#services" className="text-lg font-medium hover:text-primary transition-colors">
+          <a href="#services" className="hidden md:block text-[16px] font-medium text-black hover:text-primary transition-colors">
             OUR SERVICES
           </a>
-          <a href="#portfolio" className="text-lg font-medium hover:text-primary transition-colors">
+
+          <Link href="/" className="text-sm font-medium hover:text-primary transition-colors">
+            <Image src={Logo} alt="logo" width={20} height={20} className="inline-block mx-auto md:w-[70px] w-[50px] object-contain" />
+          </Link>
+          <a href="#portfolio" className="hidden md:block text-[16px] font-medium text-black hover:text-primary transition-colors">
             PORTFOLIO
           </a>
-          <a href="/" className="text-sm font-medium hover:text-primary transition-colors">
-            <Image src={Logo} alt="logo" width={20} height={20} className="inline-block mx-auto w-[70px] object-contain" />
-          </a>
-          <a href="#collections" className="text-lg font-medium hover:text-primary transition-colors">
-            COLLECTIONS
-          </a>
-          <a href="#bts" className="text-lg font-medium hover:text-primary transition-colors">
+          <a href="#bts" className="hidden md:block text-[16px] font-medium text-black hover:text-primary transition-colors">
             #BTS
           </a>
-          <a href="#contact" className="text-lg font-medium hover:text-primary transition-colors">
-            CONTACT
-          </a>
+
         </nav>
 
       </div>

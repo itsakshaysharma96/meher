@@ -6,6 +6,7 @@ import { Projects } from "./projects"
 import { Contact } from "./contact"
 import { Footer } from "./footer"
 import { InstagramSection } from "./instagramSection"
+import { UdcSection } from "./udc"
 
 export function Homepage() {
   return (
@@ -16,6 +17,7 @@ export function Homepage() {
       <Hero />
       <Services />
       <Projects />
+      <UdcSection />
       <InstagramSection />
       <Contact />
       <Footer />
